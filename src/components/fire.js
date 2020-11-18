@@ -1,7 +1,7 @@
 import firebase from 'firebase';
 
   var firebaseConfig = {
-    apiKey: "AIzaSyACXAhfSklma8ypePvMcLthsct3_CSAvmU",
+    apiKey: process.env.REACT_APP_FIRE_API_Key,
     authDomain: "helpdesk-20.firebaseapp.com",
     databaseURL: "https://helpdesk-20.firebaseio.com",
     projectId: "helpdesk-20",
