@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,267 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+/* all */
+
+
+html{
+  background-color: #F1EAEB;
+  /* border: 2px solid red; */
+  height: 100vh;
 }
+
+@font-face {
+  font-family: 'Vampiro One';
+  src: local('Vampiro One'), url(./fonts/VampiroOne-Regular.ttf);
+}
+@font-face {
+  font-family: 'Chilanka';
+  src: local('Chilanka'), url(./fonts/Chilanka-Regular.ttf);
+}
+.main{
+  height: 100vh;
+  padding-bottom: 100px;
+  background-color: #F1EAEB;
+}
+.type {
+  font-family: Chilanka;
+  color: #6A7152;
+}
+.nav-color{
+  background-color: #E0CEC6;
+  margin: 0;
+}
+
+.shadow{
+  box-shadow: 7px 7px 19px -12px rgba(0, 0, 0, 0.32);
+}
+
+/* landingpage */
+.back-image{
+  background-image: url('./components/landingpage/landingbackground.jpg');
+  height: 100vh;
+  background-size: cover;
+}
+
+.about{
+  padding-top: 100px;
+  /* border: 1px solid blue; */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+
+}
+h5 a:hover{
+  color: #6A7152;
+  text-decoration: none;
+}
+
+.title {
+  font-family: Vampiro One;
+  color: #F1EAEB;
+  padding-top: 5px;
+}
+
+
+@media only screen and (max-width:767px){
+  .about{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    justify-content: space-around;
+
+  }
+
+
+}
+
+@media only screen and (max-width:991px){
+  .about{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    margin-bottom: 200px;
+  }
+
+}
+.login{
+  border: 2px solid #6A7152;
+  border-radius: 5%;
+  max-width: 50%;
+  /* margin-right: 5%; */
+  background-color: #E0CEC6;
+  padding: 10px;
+
+}
+.login-label{
+  padding-right: 20px;
+}
+
+.login-button{
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border: none;
+
+}
+.login-button button{
+  border: none;
+}
+
+.login-padding{
+  padding-top: 10px;
+}
+
+.container{
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.summary{
+  width: 50%;
+  /* border: 1px solid red; */
+}
+/* homepage */
+.bkcolor{
+  background-color: #F1EAEB;
+  /* border: 2px solid red; */
+  height: 100vh;
+
+}
+/* .test{
+  border: 2px solid green;
+
+} */
+
+
+/* calculator */
+
+.calculator-container{
+    padding-top: 110px;
+
+
+
+}
+.screen-row{
+    /* width: 21.5%; */
+    background-color: #FFFFFF;
+    border: 2px ridge #6A7152;
+    border-radius: 0;
+    color: #6A7152;
+    padding: 10px;
+    text-align: right;
+    font-size: 24px;
+    width: auto;
+    height: 70px;
+
+}
+
+.calculator {
+  width: 20rem;
+  height: 30rem;
+  background-color: #E0CEC6;
+  display: grid;
+  padding: 1%;
+  /* position: absolute; */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: ridge;
+  border-radius: 10px;
+}
+
+.button-c {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 0.4rem;
+  text-align: center;
+  font-size: 150%;
+  border-radius: 0.8rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem grey;
+  background-color: #F1EAEB;
+
+}
+
+
+
+/* notes */
+
+.note-background{
+  background-color: #FFFFFF;
+  height: auto;
+  min-height: 100px;
+  border: 1px solid #6A7152;
+  padding: 20px;
+  border-radius: 10px;
+  border: ridge;
+}
+.note-task input{
+  width: 80%;
+  border-radius: 5px;
+  border: 1px solid #6A7152;
+}
+.notes{
+  width: 100%;
+  margin: 20px 0;
+
+}
+.note-output {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 20px;
+
+}
+
+/* calendar */
+.calendar-container{
+  width:100%;
+  height: auto;
+  padding: 1px;
+  border: ridge;
+  border-radius: 10px;
+  margin-top:70px;
+
+}
+/* .calender-text{
+  padding-top: 20px;
+  padding-left:18px;
+} */
+/* weather */
+.weather-text{
+  text-align: center;
+  padding-top: 40px;
+  margin-top: 10px;
+}
+.weather-output{
+  text-align: center;
+  padding-top: 20px;
+}
+.weather-background{
+  background-color:#E0CEC6;
+  border: ridge;
+  border-radius: 10px;
+  margin-top: 65px;
+  height:200px;
+
+
+}
+/* @media only screen and (max-width: 558px){
+  .weather-background{
+
+    width:100%;}
+} */
