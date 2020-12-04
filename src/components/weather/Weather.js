@@ -17,7 +17,7 @@ const Weather = ()=>{
   useEffect(()=>{
   navigator.geolocation.getCurrentPosition(function(position) {
     console.log(position)
-  const getTemp=fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${process.env.REACT_APP_WEATHER_API_Key}&units=imperial`)
+    fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${process.env.REACT_APP_WEATHER_API_Key}&units=imperial`)
 
 
    .then((response)=> {return response.json()})
